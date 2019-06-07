@@ -10,3 +10,20 @@ for each of these sections. Some extras are included at the bottom of the notebo
 
 ## Sample dataset 
 The sample dataset provides a CSV as well as one example of each image for each class. 
+
+## Conda environment 
+Conda can be used to install the necessary packages to run the code in this project. This can be
+done by running the command: 
+```bash
+conda env create -f environment.yml -n campfire
+```
+And then activating the environment: 
+```bash
+source activate campfire
+```
+Since n-dimensional arrays are not currently supported in 
+[Imbalanced-Learn](https://github.com/scikit-learn-contrib/imbalanced-learn), I created a forked
+version which can be installed by running the command: 
+```bash
+pip install git+https://github.com/gustaver/imbalanced-learn.git
+```
